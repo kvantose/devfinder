@@ -1,17 +1,14 @@
-:global {
-    body[data-theme='light'] {
+    body[data-theme="light"] {
       --header-color: var(--gray-300);
     }
   
-    body[data-theme='dark'] {
+    body[data-theme="dark"] {
       --header-color: var(--white);
     }
-  }
-
 .header {
     margin: 35px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   
   .logo {

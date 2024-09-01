@@ -1,0 +1,48 @@
+  body[data-theme='light'] {
+      --info-color: var(--gray-200);
+    }
+  
+    body[data-theme='dark'] {
+      --info-color: var(--white);
+    }
+  
+  
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+    @media (min-width: 767px) {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-auto-flow: column;
+    }
+  }
+  
+  .infoItem {
+    color: var(--info-color);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+  
+    svg {
+      fill: var(--info-color);
+      margin-right: 1rem;
+      width: 20px;
+    }
+  
+    &.empty {
+      opacity: 0.75;
+    }
+  }
+  
+.link {
+    text-decoration: none;
+    color: var(--info-color);
+  
+}
+.link:hover {
+  text-decoration: underline;
+}
